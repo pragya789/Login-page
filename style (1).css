@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2D3A47;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background-color: #2D3A47;
+  box-shadow: 0px 0px 10px #f7f7f7;
+  padding: 1rem;
+  font-family: "poppins", sans-serif;
+  width: 50%;
+  border-radius: 12px;
+}
+.form-container .form h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Courier New", Courier, monospace;
+  color: #f7f7f7;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.form-container .form .pd {
+  padding-left: 10px;
+}
+.form-container .form .box {
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.form-container .form .btn {
+  background-color: #3CA9EE;
+  color: #2D3A47;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+.form-container .form .btn:hover {
+  background-color: #2D3A47;
+  box-shadow: 0px 0px 10px #f7f7f7;
+  color: #f7f7f7;
+}
+.form-container .form .files {
+  color: #f7f7f7;
+}
+.form-container .form .files::-webkit-file-upload-button {
+  font-weight: bold;
+  color: #f7f7f7;
+  background-color: #3CA9EE;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form-container .form .files::file-selector-button {
+  font-weight: bold;
+  color: #f7f7f7;
+  background-color: #3CA9EE;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form-container .form p {
+  font-family: "poppins", sans-serif;
+  color: #f7f7f7;
+  text-align: center;
+  line-height: 1.6rem;
+}
+.form-container .form p a {
+  color: #3CA9EE;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.form-container .form p a:hover {
+  color: #f7f7f7;
+}
+
+.dash-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dash-container .profile {
+  width: 100%;
+  margin: 0 6rem;
+  border-radius: 0px 0px 12px 12px;
+  height: 50vh;
+  background-color: #2D3A47;
+  box-shadow: 0px 0px 10px #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: flex-end;
+}
+.dash-container .profile .profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.dash-container .profile .profile-img img {
+  width: 160px;
+  position: relative;
+  top: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.dash-container .profile .profile-img h3 {
+  position: relative;
+  top: 50px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  color: #f7f7f7;
+  font-size: 32px;
+}
+.dash-container .profile .profile-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  position: relative;
+}
+.dash-container .profile .profile-details a {
+  color: #3CA9EE;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "poppins", sans-serif;
+  position: relative;
+  top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.dash-container .profile .profile-details a:hover {
+  color: #f7f7f7;
+}
+.dash-container .profile .heading {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #1c41af;
+}
+.dash-container .profile .heading .greeting {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  text-align: center !important;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.user-details {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-img {
+  width: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.hh {
+  font-family: "Courier New", Courier, monospace;
+  color: #f7f7f7;
+  font-size: 22px;
+}
+
+.error {
+  color: rgb(182, 63, 63);
+  text-transform: capitalize;
+}
+
+.message {
+  text-align: center !important;
+}
+
+@media screen and (max-width: 768px) {
+  .dash-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .dash-container .profile {
+    width: 100%;
+    margin: 0 1rem;
+    border-radius: 0px 0px 12px 12px;
+    height: 50vh;
+    background-color: #2D3A47;
+    box-shadow: 0px 0px 10px #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: flex-end;
+  }
+  .dash-container .profile .profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .dash-container .profile .profile-img img {
+    width: 160px;
+    position: relative;
+    top: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .dash-container .profile .profile-img h3 {
+    position: relative;
+    top: 50px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    color: #f7f7f7;
+    font-size: 32px;
+  }
+  .dash-container .profile .profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    position: relative;
+  }
+  .dash-container .profile .profile-details a {
+    color: #3CA9EE;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "poppins", sans-serif;
+    position: relative;
+    top: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  .dash-container .profile .profile-details a:hover {
+    color: #f7f7f7;
+  }
+  .dash-container .profile .heading {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #1c41af;
+  }
+  .dash-container .profile .heading .greeting {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center !important;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .user-details {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-container {
+    width: 100%;
+  }
+  .form-container .form {
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }
+  .dash-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .dash-container .profile {
+    width: 100%;
+    margin: 0 1rem;
+    border-radius: 0px 0px 12px 12px;
+    height: 50vh;
+    background-color: #2D3A47;
+    box-shadow: 0px 0px 10px #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: flex-end;
+  }
+  .dash-container .profile .profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .dash-container .profile .profile-img img {
+    width: 160px;
+    position: relative;
+    top: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  .dash-container .profile .profile-img h3 {
+    position: relative;
+    top: 70px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    color: #f7f7f7;
+    font-size: 22px;
+  }
+  .dash-container .profile .profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    position: relative;
+  }
+  .dash-container .profile .profile-details a {
+    color: #3CA9EE;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "poppins", sans-serif;
+    position: relative;
+    top: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .dash-container .profile .profile-details a:hover {
+    color: #f7f7f7;
+  }
+  .dash-container .profile .heading {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #1c41af;
+  }
+  .dash-container .profile .heading .greeting {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center !important;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .user-details {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
